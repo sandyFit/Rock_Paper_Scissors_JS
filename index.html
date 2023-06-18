@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✊ 🖐 ✌</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Piedra, papel o Tijera</h1>
+    </header>
+
+    <main>
+
+        <p class="instrucciones" id="instrucciones">
+            El primero en llegar a 5 puntos gana
+        </p>
+        <div class="marcador">
+            <p class="nombre nombre-jugador">JUGADOR</p>
+            <p class="nombre nombre-computador">COMPUTADORA</p>
+            <p class="puntos">
+                <span id="puntos-usario">0</span>
+                <span>-</span>
+                <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+
+        <div class="elige-arma" id="elige-arma">
+            <h2>Elige tu Arma </h2>
+            <div class="armas">
+                <button class="arma" id="piedra 🥌">🥌</button>
+                <button class="arma" id="papel 📃">📃</button>
+                <button class="arma" id="tijera ✂">✂</button>
+            </div>           
+        </div>
+
+        <hr class="linea-separador">
+
+        <div class="mensaje disabled" id="mensaje">
+
+            <hr>
+            <p class="puntaje">
+                Elegiste<span class="eleccion" id="eleccion-usuario">
+                    piedra 🥌
+                </span>
+                <span class="separador">||</span>
+                La computadora eligió<span class="eleccion" id="eleccion-compu"> papel 📃</span>
+            </p>
+
+            <hr>
+
+            <p class="gana-punto" id="gana-punto"></p>
+        </div>
+
+        <button class="btn disabled" id="reiniciar">Reiniciar juego</button>
+
+    </main>
+    
+    <script src="./js/iniciaJuego.js"></script>
+    <script src="./js/gana.js"></script>
+    <script src="./js/reinicia.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="./js/confetti.js"></script>
+</body>
+</html>
